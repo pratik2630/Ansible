@@ -1,9 +1,8 @@
 [myself]
-#localhost  ansible_ssh_user=root ansible_ssh_pass=fedora ansible_ask_pass=false
+localhost
 
 [aws_ec2]
-65.0.81.189
-
+#aws ip
 
 
 
