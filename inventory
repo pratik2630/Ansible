@@ -1,5 +1,6 @@
 [myself]
-localhost
+localhost ansible_connection=local
+#localhost ansible_ssh_user=username ansible_ssh_pass=password ansible_ask_pass=false
 
 [aws_ec2]
 #aws ip
