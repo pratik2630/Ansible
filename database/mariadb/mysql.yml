@@ -13,8 +13,8 @@
   tasks:
     - name: install mariadb
       yum:
-        name: mariadb-server
-        state: absent
+        name: mysql-server
+        state: latest
 
     - name: create mysql configuration file
       template:
@@ -33,14 +33,14 @@
 
     - name: start mariadb service
       service:
-        name: mariadb
+        name: mysqld
         state: started
         enabled: yes
 
   handlers:
     - name: restart mariadb
       service:
-          name: mariadb
+          name: mysqld
           state: restarted
 
 
